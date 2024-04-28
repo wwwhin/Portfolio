@@ -579,7 +579,6 @@
          message : document.getElementById('message').value
       }
       emailjs.send("service_kyk9jrp", "template_2i4l8e4", params).then(function(res){
-        console.log(res.status)
         if(res.status === 200){
           alert("success", res.status)
           sub.innerHTML = "Send Message"
