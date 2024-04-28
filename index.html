@@ -580,7 +580,6 @@
       }
       emailjs.send("service_kyk9jrp", "template_2i4l8e4", params).then(function(res){
         if(res.status === 200){
-          alert("success", res.status)
           sub.innerHTML = "Send Message"
           error.innerHTML = ""
           success.innerHTML = "Sent successfully"
